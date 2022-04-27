@@ -7,7 +7,6 @@
 //Define Variables
 myTransport= ["walk", "car", "bus",];
 
-
 myMainRide = {
   make: "Subaru",
   model: "Forester",
@@ -20,5 +19,5 @@ myMainRide = {
 
 // output
 document.writeln("Kinds of Transportation I use: ", myTransport, "</br>");
-document.writeln("My Main Ride; <pre>",
-    JSON.strngfy(myMainRide, null, '\t'),"<pre");
+document.writeln("My Main Ride: <pre>",
+    JSON.stringify(myMainRide, null, '\t'), "</pre>");
