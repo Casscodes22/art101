@@ -26,6 +26,11 @@ p {
   font-family: monospace;
 }
 
+div {
+  color: blue;
+  font-weight: bold;
+  font-family:cursive;
+}
 .output {
   font-family: monospace;
 }
