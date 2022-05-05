@@ -1,0 +1,36 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(238, 130, 238)
+}
+
+h1 {
+  border-style: dotted;
+  border-width: thick;
+  border-color: blue
+}
+
+h3 {
+  border-style:solid;
+  border-color: blue
+}
+
+h4{
+  border-style: solid;
+  border-color: blue
+}
+
+p {
+  font-family: monospace;
+}
+
+div {
+  color: blue;
+  font-weight: bold;
+  font-family:cursive;
+}
+.output {
+  font-family: monospace;
+}
