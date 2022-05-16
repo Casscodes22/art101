@@ -4,6 +4,27 @@
 *License: Public Domain
 */
 
+flowerArray = [
+  {
+    title: "Rose",
+    text: "A Rose symoblized beauty, strength and grit."
+  },
+  {
+    title: "Daisy",
+    text: "A Daisy signifies cheerfulnessn and are bright lights in nature. "
+  },
+  {
+    title: "Sunflower",
+    text: " A Sunflower represent good luck in many cultures, as well as evokes a sence of loyalty and trust from others "
+  },
+  {
+    title: "Tulip",
+    text: "Tulips are a symbols of undying love and eternal connection. This spiit is strong and intense, who fights for the ones they love"
+  }
+]
+
+// Return Rose, Daisy, Sunflower, and Tulip
+// depending on length mod 4
 function sortingFlower(str) {
   length = str.length;
   mod = length % 4;
@@ -27,4 +48,5 @@ myButton.addEventListener("click", function() {
     var flower = sortingFlower(name);
     newText = "<p> The secret garden has sorted you as a " + flower + "</p";
     document.getElementById("output").innerHTML = newText;
+    var flowerArray = document.getElementById("flowerArray");
 })
