@@ -25,6 +25,6 @@ var myButton = document.getElementById("button");
 myButton.addEventListener("click", function() {
     var name = document.getElementById("input").value;
     var flower = sortingFlower(name);
-    newText = "<p> The sorting garden has sorted you as a " + flower + "</p";
+    newText = "<p> The secret garden has sorted you as a " + flower + "</p";
     document.getElementById("output").innerHTML = newText;
 })
