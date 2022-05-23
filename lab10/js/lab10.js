@@ -4,13 +4,17 @@
 *License: Public Domain
 */
 
+var outputEl= document.getElementById("output");
+
+var inputEl = document.getElementById("user-name");
+
+var buttonEl = document.getElementById("the-button");
+
 //sortUserName- a function that takes user input and
 //sorts the letter of their name
-function sortUserName() {
-  var userName = window.prompt("Welcome, please tell me your full name so I can call you by your name!");
-  console.log("userName =", userName);
+function sortUserName(word) {
   //split string to array
-  var nameArray = userName.split('');
+  var nameArray = word.split('');
   console.log("nameArray =", nameArray);
   // sort the array
   var nameArraySort = nameArray.sort();
@@ -20,12 +24,9 @@ function sortUserName() {
   return nameSorted;
 }
 
-//output
-document.writeln("Great, I will now call you by your new name: ",
-  sortUserName(),"</br>");
 //create event
-var buttonEl = document.getElementById('the-button');
 buttonEl.addEventListener('click', function() {
-	alert("Your gonna leave!");
-  window.location.replace("https://www.google.com/");
+  var userName = inputEl.value;
+  var newName = sortUserName(userName);
+  outputEl.innerHTML = "<p> Here is your new name!" + newName + "</p>";
 });
